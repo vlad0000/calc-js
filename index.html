@@ -7,7 +7,33 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+	<div class="container">
+		<div class="calc">
+			<form class="form" action="#" name="form" >
+				<input class="input" type="text" name="textview" readonly>
+			</form>
+			<div class="item clean" onclick="clean(input)">C</div>
+			<div class="item back" onclick="back(input)">&larr;</div>
+			<div class="item" onclick="insert('(', input)">(</div>
+			<div class="item" onclick="insert(')', input)">)</div>
+			<div class="item" onclick="insert('*', input)">&times;</div>
+			<div class="item" onclick="insert('/', input)">&divide;</div>
+			<div class="item" onclick="insert('7', input)">7</div>
+			<div class="item" onclick="insert('8', input)">8</div>
+			<div class="item" onclick="insert('9', input)">9</div>
+			<div class="item" onclick="insert('+', input)">+</div>
+			<div class="item" onclick="insert('4', input)">4</div>
+			<div class="item" onclick="insert('5', input)">5</div>
+			<div class="item" onclick="insert('6', input)">6</div>
+			<div class="item" onclick="insert('-', input)">-</div>
+			<div class="item" onclick="insert('1', input)">1</div>
+			<div class="item" onclick="insert('2', input)">2</div>
+			<div class="item" onclick="insert('3', input)">3</div>
+			<div class="item equal" onclick="equal(input)">=</div>
+			<div class="item zero" onclick="insert('0', input)">0</div>
+			<div class="item" onclick="insert('.', input)">.</div>
+		</div>
+	</div>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="js/main.js"></script>
 </body>
